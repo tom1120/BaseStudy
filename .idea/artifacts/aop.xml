@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="aop">
+    <output-path>$PROJECT_DIR$/out/artifacts/aop</output-path>
+    <root id="archive" name="aop.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/com/kito/javassist/MyClassFileTransformer.java" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/aop/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
