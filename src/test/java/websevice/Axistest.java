@@ -1,13 +1,19 @@
 package websevice;
 
 
+import org.apache.axis.EngineConfiguration;
 import org.apache.axis.client.Call;
 import org.apache.axis.client.Service;
 import org.apache.axis.client.Transport;
+import org.apache.axis.configuration.EngineConfigurationFactoryFinder;
+import org.apache.axis.configuration.SimpleProvider;
 import org.apache.axis.message.RPCHeaderParam;
 import org.apache.axis.message.SOAPHeaderElement;
+import org.apache.axis.transport.http.CommonsHTTPSender;
 import org.apache.axis.transport.http.HTTPConstants;
+import org.apache.axis.transport.http.HTTPTransport;
 import org.junit.Test;
+import org.tempuri.Trans4JsonLocator;
 
 import javax.xml.namespace.QName;
 import javax.xml.rpc.ServiceException;
@@ -41,6 +47,11 @@ public class Axistest {
     @Test
     public void test1axis1_4()  {
         try {
+            EngineConfiguration defaultConfig = EngineConfigurationFactoryFinder.newFactory().getClientEngineConfig();
+            SimpleProvider config = new SimpleProvider(defaultConfig);
+            config.deployTransport(HTTPTransport.DEFAULT_TRANSPORT_NAME,new CommonsHTTPSender());
+            Trans4JsonLocator locator = new Trans4JsonLocator(config);
+
             String endpoint = "http://testys.kito.cn:80/Trans4Json.asmx";
 //            String endpoint = "http://121.201.125.151/Trans4Json.asmx";
 
@@ -50,7 +61,7 @@ public class Axistest {
 //            call.addHeader(new SOAPHeaderElement("Content-Type","text/xml;charset=UTF-8"));
             //设置service所在的url
             call.setTargetEndpointAddress(new java.net.URL(endpoint));
-            call.setProperty("axis.transport.version", HTTPConstants.HEADER_PROTOCOL_V11);
+//            call.setProperty("axis.transport.version", HTTPConstants.HEADER_PROTOCOL_V11);
             //接口函数
             call.setOperationName(new QName("http://tempuri.org/","DataTrans_BaseData_Single"));
             call.setSOAPActionURI("http://tempuri.org/DataTrans_BaseData_Single");

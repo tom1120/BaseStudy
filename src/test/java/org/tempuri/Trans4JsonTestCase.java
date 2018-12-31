@@ -7,6 +7,11 @@
 
 package org.tempuri;
 
+import org.apache.axis.SimpleTargetedChain;
+import org.apache.axis.configuration.BasicClientConfig;
+import org.apache.axis.configuration.SimpleProvider;
+import org.apache.axis.transport.http.CommonsHTTPSender;
+
 public class Trans4JsonTestCase extends junit.framework.TestCase {
     public Trans4JsonTestCase(String name) {
         super(name);
@@ -20,10 +25,23 @@ public class Trans4JsonTestCase extends junit.framework.TestCase {
     }
 
     public void test1Trans4JsonSoapHelloWorld() throws Exception {
+
+        // get a modifiable configuration and instantiate it with a basic client configuration
+        SimpleProvider config = new SimpleProvider(new BasicClientConfig());
+
+// create a new simple targeted chain
+        SimpleTargetedChain c = new SimpleTargetedChain(new CommonsHTTPSender());
+
+// and add it to the configuration
+        config.deployTransport("http", c);
+
+// instantiate the service locator with the configuration
+//        HelloWorldServiceLocator helloWorldServiceLocator = new HelloWorldServiceLocator(config);
+
         Trans4JsonSoapStub binding;
         try {
             binding = (Trans4JsonSoapStub)
-                          new Trans4JsonLocator().getTrans4JsonSoap();
+                          new Trans4JsonLocator(config).getTrans4JsonSoap();
         }
         catch (javax.xml.rpc.ServiceException jre) {
             if(jre.getLinkedCause()!=null)
@@ -38,6 +56,7 @@ public class Trans4JsonTestCase extends junit.framework.TestCase {
         // Test operation
         String value = null;
         value = binding.helloWorld();
+        System.out.println("value = " + value);
         // TBD - validate results
     }
 
