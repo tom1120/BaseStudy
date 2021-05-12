@@ -42,6 +42,10 @@
                             <hooks>
                                 <!--调用shell执行mvn命令，默认生成的hook文件执行路径-->
                                 <pre-commit>
+                                    <![CDATA[
+                                    #!/bin/bash
+                                    set -x
+                                    exec &> log.txt
                                     echo running validation build
                                     exec mvn sonar:sonar
                                     sleep 5
@@ -55,6 +59,7 @@
                                     elif [ $d=="\"OK\"" ]; then
                                         exit 0
                                     fi
+                                    ]]>
                                 </pre-commit>
                             </hooks>
                         </configuration>
