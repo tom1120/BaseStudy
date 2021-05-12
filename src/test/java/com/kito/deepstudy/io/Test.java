@@ -12,7 +12,7 @@ public class Test {
         if(integer.intValue()>0){
             System.out.println("integer = " + integer);
         }
-        int d=3/0;
+        int d=31/0;
     }
 
 
