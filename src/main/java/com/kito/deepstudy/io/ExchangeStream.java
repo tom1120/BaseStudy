@@ -26,6 +26,7 @@ public class ExchangeStream {
         );
 
         String s="";
+        // 按行读写
         while (null!=(s=bufferedReader.readLine())){
             bufferedWriter.write(s);
             bufferedWriter.newLine();

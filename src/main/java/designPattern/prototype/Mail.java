@@ -1,6 +1,6 @@
 package designPattern.prototype;
 
-public class Mail {
+public class Mail implements Cloneable{
 	//收件人
 	private String receiver;
 	//邮件名称
@@ -46,5 +46,15 @@ public class Mail {
 	public void setTail(String tail) {
 		this.tail = tail;
 	}
-	
+
+	@Override
+	public Mail clone()  {
+		Mail mail=null;
+		try {
+			mail= (Mail) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return mail;
+	}
 }

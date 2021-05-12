@@ -7,6 +7,16 @@
     <groupId>com.zhaoyi</groupId>
     <artifactId>BaseStudy</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <org.springframework.version>5.3.6</org.springframework.version>
+
+        <sonar.login>0a7a0fe1383b45897e0f04856c6c87d81b0175f2</sonar.login>
+        <sonar.host.url>http://192.168.99.14:9200</sonar.host.url>
+        <sonar.projectKey>mydemo</sonar.projectKey>
+
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -17,6 +27,62 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+
+            <!--代码质量检查-->
+            <plugin>
+                <groupId>io.github.phillipuniverse</groupId>
+                <artifactId>githook-maven-plugin</artifactId>
+                <version>1.0.5</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>install</goal>
+                        </goals>
+                        <configuration>
+                            <hooks>
+                                <!--调用shell执行mvn命令，默认生成的hook文件执行路径-->
+                                <pre-commit>
+                                    echo running validation build
+                                    exec mvn sonar:sonar
+                                    sleep 5
+                                    curl_cmd=`curl -i -X POST -d "login=admin" -d "password=42899975" http://192.168.99.14:9200/api/authentication/login`
+                                    c=`echo $curl_cmd |grep 'Set-Cookie:' | awk -F ":" '{print $8}'`
+                                    cmd=`curl -b "$c" http://192.168.99.14:9200/api/qualitygates/project_status?projectKey=mydemo`
+                                    d=`echo $cmd | awk -F ":" '{print $3}' | awk -F "," '{print $1}'`
+                                    echo "=============="$d
+                                    if [ $d=="\"ERROR\"" ]; then
+                                        exit 1
+                                    elif [ $d=="\"OK\"" ]; then
+                                        exit 0
+                                    fi
+                                </pre-commit>
+                            </hooks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.9.0.2155</version>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                    <compilerArguments>
+                        <verbose/>
+                        <extdirs>${project.basedir}/src/main/locallib</extdirs>
+                        <!--<bootclasspath>${env.JAVA_HOME}/jre/lib/rt.jar;${env.JAVA_HOME}/jre/lib/jce.jar;${env.JAVA_HOME}/jre/lib/jfxrt.jar</bootclasspath>-->
+                    </compilerArguments>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
@@ -26,6 +92,12 @@
                 <id>aliyun</id>
                 <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
             </repository>
+
+            <repository>
+                <id>central</id>
+                <url>https://repo1.maven.org/maven2/</url>
+            </repository>
+
     </repositories>
 
     <dependencies>
@@ -79,7 +151,65 @@
             <version>262</version>
         </dependency>
 
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.7.3</version>
+            <!--<scope>test</scope>-->
+        </dependency>
 
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.0-alpha1</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>log4j-over-slf4j</artifactId>-->
+            <!--<version>2.0.0-alpha1</version>-->
+        <!--</dependency>-->
+
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>2.0.0-alpha1</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+
+
+        <!--简化一些写法 set get constructor slf4j-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+            <version>8.2.1</version>
+        </dependency>
 
 
     </dependencies>

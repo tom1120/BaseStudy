@@ -26,12 +26,19 @@ public class TimeClientA {
             bufferedReader=new BufferedReader(new InputStreamReader(socket.getInputStream()));
             bufferedWriter=new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
-            bufferedWriter.write("客户端A返回给服务端的消息："+System.currentTimeMillis());
-            Thread.sleep(10000);
-            bufferedWriter.newLine();
-            bufferedWriter.flush();
-            String receiveServerString=bufferedReader.readLine();
-            System.out.println("收到服务端的消息 = " + receiveServerString);
+            int i=0;
+            while (i<10){
+//                String consoleInput=new BufferedReader(new InputStreamReader(System.in)).readLine();
+//                bufferedWriter.write(consoleInput+System.currentTimeMillis());
+
+                bufferedWriter.write("客户端A返回给服务端的消息："+System.currentTimeMillis());
+                bufferedWriter.newLine();
+                bufferedWriter.flush();
+                String receiveServerString=bufferedReader.readLine();
+                System.out.println("收到服务端的消息 = " + receiveServerString);
+                i++;
+            }
+
         }catch (Exception e){
             e.printStackTrace();
             StreamCloseUtil.closeAllStreams(bufferedWriter,bufferedReader,socket);

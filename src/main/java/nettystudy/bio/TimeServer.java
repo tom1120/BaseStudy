@@ -24,6 +24,7 @@ public class TimeServer {
             System.out.println("服务端启动在："+port);
 
             while (true){
+                // io阻塞
                 socket=serverSocket.accept();
                 //一个socket开启一个线程处理客户端的
                 new Thread(new TimeServerHanddlerThread(socket)).start();

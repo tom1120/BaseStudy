@@ -31,21 +31,23 @@ public class StringTest {
     private void testChar(){
         char[] c=new char[1];
         c[0]='数';
+        //default charset 为 UTF-8
         String s=new String(c);
+        String englishchar=new String(new char[]{'a'});
         try {
-            System.out.println("c[1] = " + c[1]);
+            System.out.println("c[0] = " + c[0]);
         }catch (Exception e){
             e.printStackTrace();
         }
 
         System.out.println("字符数长度"+s.getBytes().length);
-
+        System.out.println("englishchar length= " + englishchar.getBytes().length);
 
     }
 
     public static void main(String[] args) {
         StringTest st=new StringTest();
-//        st.testBypes();
+        st.testBypes();
         st.testChar();
 
 

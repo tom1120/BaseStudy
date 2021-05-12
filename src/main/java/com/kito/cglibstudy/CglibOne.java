@@ -11,6 +11,13 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
+ *
+ * spring aop总结:
+ 　　如果加入容器的目标对象有实现接口,用JDK代理
+ 　　如果目标对象没有实现接口,用Cglib代理 　　
+ 　　如果目标对象实现了接口，且强制使用cglib代理，则会使用cglib代理
+
+ *
  * 类+切入逻辑织入器织入并生成子类
  * @author zhaoyi
  * @createTime 2017-05-2017/5/17-22:03

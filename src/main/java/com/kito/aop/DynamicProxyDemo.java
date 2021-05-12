@@ -5,6 +5,8 @@ package com.kito.aop;/**
 import java.lang.reflect.Proxy;
 
 /**
+ * JDK动态代理
+ * 代理对象不需要实现接口,但是目标对象一定要实现接口,否则不能用动态代理
  * 接口+类+切入逻辑反射生成代理类
  * @author zhaoyi
  * @createTime 2017-05-2017/5/15-23:42

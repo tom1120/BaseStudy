@@ -15,10 +15,11 @@ public class Client {
 		Mail mail=new Mail(new AdvTemplate());
 		mail.setTail("XX银行版权所有");
 		while(i<MAX_COUNT){
-			mail.setAppellation(getRandString(5)+" 先生(女士) ");
-			mail.setReceiver(getRandString(5)+"@"+getRandString(8)+".com");
+			Mail clonemail=mail.clone();
+			clonemail.setAppellation(getRandString(5)+" 先生(女士) ");
+			clonemail.setReceiver(getRandString(5)+"@"+getRandString(8)+".com");
 			//然后发送邮件
-			sendMail(mail);
+			sendMail(clonemail);
 			i++;
 		}
 		

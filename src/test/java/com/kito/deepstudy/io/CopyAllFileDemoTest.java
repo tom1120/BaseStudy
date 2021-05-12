@@ -2,6 +2,7 @@ package com.kito.deepstudy.io;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,6 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Created by hasee on 2017/5/30.
  */
+@Ignore
 public class CopyAllFileDemoTest {
     @Before
     public void setUp() throws Exception {

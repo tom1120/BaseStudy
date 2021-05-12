@@ -5,6 +5,7 @@ import org.junit.*;
 /**
  * Created by zhaoyipc on 2018/10/13.
  */
+@Ignore
 public class TestExample {
     @org.junit.Test
     public void test(){

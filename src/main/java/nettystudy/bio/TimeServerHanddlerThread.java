@@ -43,11 +43,12 @@ public class TimeServerHanddlerThread implements Runnable {
             outputStreamWriter = new OutputStreamWriter(this.os);
             bw = new BufferedWriter(outputStreamWriter);
             while (true) {
+                // 阻塞
                 String receiveString = br.readLine();
                 if (receiveString == null)
                     break;
                 System.out.println("接收到客户端的字符串为 = " + receiveString);
-
+                Thread.sleep(3000);
                 bw.write("回复客户端消息");
                 bw.newLine();
                 bw.flush();
@@ -57,6 +58,8 @@ public class TimeServerHanddlerThread implements Runnable {
 //            e.printStackTrace();
             System.out.println("客户端断开连接"+socket.toString());
             StreamCloseUtil.closeAllStreams(is, os, socket);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
     }

@@ -1,5 +1,6 @@
 package javashell;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.List;
 /**
  * Created by zhaoyipc on 2018-12-31.
  */
+@Ignore
 public class TestShell {
     @Test
     public void testWindowLocalShell(){

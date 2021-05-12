@@ -11,7 +11,9 @@ import org.apache.axis.SimpleTargetedChain;
 import org.apache.axis.configuration.BasicClientConfig;
 import org.apache.axis.configuration.SimpleProvider;
 import org.apache.axis.transport.http.CommonsHTTPSender;
+import org.junit.Ignore;
 
+@Ignore
 public class Trans4JsonTestCase extends junit.framework.TestCase {
     public Trans4JsonTestCase(String name) {
         super(name);

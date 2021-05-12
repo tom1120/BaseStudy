@@ -28,6 +28,7 @@ public class TimeClient {
             bufferedWriter.write("客户端返回给服务端的消息："+System.currentTimeMillis());
             bufferedWriter.newLine();
             bufferedWriter.flush();
+            // 阻塞
             String receiveServerString=bufferedReader.readLine();
             System.out.println("收到服务端的消息 = " + receiveServerString);
         }catch (Exception e){

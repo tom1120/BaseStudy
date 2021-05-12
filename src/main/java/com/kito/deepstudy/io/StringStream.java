@@ -11,6 +11,10 @@ import java.util.Arrays;
  */
 public class StringStream {
     String filepath="E:/1.txt";
+
+    /**
+     * 输出流-》文件输出流
+     */
     public void outStreamDemo(){
 
         File f=new File(filepath);
@@ -48,6 +52,7 @@ public class StringStream {
 
     /**
      * 流从方向来分，分为输入流与输出流，以程序为中心来说的
+     * 文件输入流
      * @param
      */
     public void inputStreamDemo(){

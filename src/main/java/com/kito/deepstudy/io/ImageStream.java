@@ -11,6 +11,9 @@ import java.io.*;
  * @createTime 2017-05-2017/5/27-23:51
  */
 public class ImageStream {
+    /**
+     * 读取图片图像，并写入另外文件
+     */
     private void readImage(){
         String imagePath="E:\\123.jpg";
         File imageFile=new File(imagePath);
