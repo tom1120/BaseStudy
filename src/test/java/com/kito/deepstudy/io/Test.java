@@ -1,18 +1,12 @@
-package com.kito.deepstudy.io;/**
- * Created by hasee on 2017/9/8.
- */
-
+package com.kito.deepstudy.io;
 /**
  * @author zhaoyi
- * @createTime 2017-09-2017/9/8-19:31
  */
 public class Test {
     public static void main(String[] args) {
-        Integer integer=new Integer(28988263);
-        if(integer.intValue()>0){
-            System.out.println("integer = " + integer);
-        }
-        int d=31/0;
+        int i=200;
+        System.out.println("integer = " + i);
+        int d=311;
     }
 
 

@@ -11,7 +11,7 @@
     <properties>
         <org.springframework.version>5.3.6</org.springframework.version>
 
-        <sonar.login>0a7a0fe1383b45897e0f04856c6c87d81b0175f2</sonar.login>
+        <sonar.login>a4c0bdab885b651e331b3d44b796ef0ef68775a4</sonar.login>
         <sonar.host.url>http://192.168.99.14:9200</sonar.host.url>
         <sonar.projectKey>mydemo</sonar.projectKey>
 
@@ -19,17 +19,9 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
 
-            <!--代码质量检查-->
-            <plugin>
+            <!--代码质量检查，提交前pre-commit-->
+<!--            <plugin>
                 <groupId>io.github.phillipuniverse</groupId>
                 <artifactId>githook-maven-plugin</artifactId>
                 <version>1.0.5</version>
@@ -40,7 +32,7 @@
                         </goals>
                         <configuration>
                             <hooks>
-                                <!--调用shell执行mvn命令，默认生成的hook文件执行路径-->
+                                &lt;!&ndash;调用shell执行mvn命令，命令修改要生效，需要先执行mvn install，默认生成的hook文件执行路径&ndash;&gt;
                                 <pre-commit>
                                     <![CDATA[
 #!/bin/bash
@@ -65,8 +57,8 @@ fi
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-
+            </plugin>-->
+<!--            代码检查 mvn sonar:sonar-->
             <plugin>
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
@@ -74,6 +66,7 @@ fi
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
