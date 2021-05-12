@@ -47,7 +47,7 @@
                                     set -x
                                     exec &> log.txt
                                     echo running validation build
-                                    exec mvn sonar:sonar
+                                    mvn sonar:sonar
                                     sleep 5
                                     curl_cmd=`curl -i -X POST -d "login=admin" -d "password=42899975" http://192.168.99.14:9200/api/authentication/login`
                                     c=`echo $curl_cmd |grep 'Set-Cookie:' | awk -F ":" '{print $8}'`
