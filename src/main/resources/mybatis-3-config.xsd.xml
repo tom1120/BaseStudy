@@ -1,0 +1,70 @@
+<configuration>
+  <!--Optional:-->
+  <properties resource="anySimpleType" url="anySimpleType">
+    <!--Zero or more repetitions:-->
+    <property name="anySimpleType" value="anySimpleType"/>
+  </properties>
+  <!--Optional:-->
+  <settings>
+    <!--1 or more repetitions:-->
+    <setting name="anySimpleType" value="anySimpleType"/>
+  </settings>
+  <!--Optional:-->
+  <typeAliases>
+    <!--Zero or more repetitions:-->
+    <typeAlias type="anySimpleType" alias="anySimpleType"/>
+    <!--Zero or more repetitions:-->
+    <package name="anySimpleType"/>
+  </typeAliases>
+  <!--Optional:-->
+  <typeHandlers>
+    <!--Zero or more repetitions:-->
+    <typeHandler javaType="anySimpleType" jdbcType="anySimpleType" handler="anySimpleType"/>
+    <!--Zero or more repetitions:-->
+    <package name="anySimpleType"/>
+  </typeHandlers>
+  <!--Optional:-->
+  <objectFactory type="anySimpleType">
+    <!--Zero or more repetitions:-->
+    <property name="anySimpleType" value="anySimpleType"/>
+  </objectFactory>
+  <!--Optional:-->
+  <objectWrapperFactory type="anySimpleType">
+    <!--Zero or more repetitions:-->
+    <property name="anySimpleType" value="anySimpleType"/>
+  </objectWrapperFactory>
+  <!--Optional:-->
+  <plugins>
+    <!--1 or more repetitions:-->
+    <plugin interceptor="anySimpleType">
+      <!--Zero or more repetitions:-->
+      <property name="anySimpleType" value="anySimpleType"/>
+    </plugin>
+  </plugins>
+  <!--Optional:-->
+  <environments default="anySimpleType">
+    <!--1 or more repetitions:-->
+    <environment id="anySimpleType">
+      <transactionManager type="anySimpleType">
+        <!--Zero or more repetitions:-->
+        <property name="anySimpleType" value="anySimpleType"/>
+      </transactionManager>
+      <dataSource type="anySimpleType">
+        <!--Zero or more repetitions:-->
+        <property name="anySimpleType" value="anySimpleType"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <!--Optional:-->
+  <databaseIdProvider type="anySimpleType">
+    <!--Zero or more repetitions:-->
+    <property name="anySimpleType" value="anySimpleType"/>
+  </databaseIdProvider>
+  <!--Optional:-->
+  <mappers>
+    <!--Zero or more repetitions:-->
+    <mapper resource="anySimpleType" url="anySimpleType" class="anySimpleType"/>
+    <!--Zero or more repetitions:-->
+    <package name="anySimpleType"/>
+  </mappers>
+</configuration>

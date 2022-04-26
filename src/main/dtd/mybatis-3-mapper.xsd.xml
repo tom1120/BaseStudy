@@ -1,0 +1,1822 @@
+<mapper namespace="anySimpleType">
+  <!--You have a CHOICE of the next 9 items at this level-->
+  <cache-ref namespace="anySimpleType"/>
+  <cache type="anySimpleType" eviction="anySimpleType" flushInterval="anySimpleType" size="anySimpleType" readOnly="anySimpleType" blocking="anySimpleType">
+    <!--Zero or more repetitions:-->
+    <property name="anySimpleType" value="anySimpleType"/>
+  </cache>
+  <!--Zero or more repetitions:-->
+  <resultMap id="anySimpleType" type="anySimpleType" extends="anySimpleType" autoMapping="false">
+    <!--Optional:-->
+    <constructor>
+      <!--Zero or more repetitions:-->
+      <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+      <!--Zero or more repetitions:-->
+      <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+    </constructor>
+    <!--Zero or more repetitions:-->
+    <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+    <!--Zero or more repetitions:-->
+    <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+    <!--Zero or more repetitions:-->
+    <association property="anySimpleType" column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="true" fetchType="lazy">
+      <!--Optional:-->
+      <constructor>
+        <!--Zero or more repetitions:-->
+        <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+        <!--Zero or more repetitions:-->
+        <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+      </constructor>
+      <!--Zero or more repetitions:-->
+      <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+      <!--Zero or more repetitions:-->
+      <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+      <!--Zero or more repetitions:-->
+      <association/>
+      <!--Zero or more repetitions:-->
+      <collection property="anySimpleType" column="anySimpleType" javaType="anySimpleType" ofType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="true" fetchType="lazy">
+        <!--Optional:-->
+        <constructor>
+          <!--Zero or more repetitions:-->
+          <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+        </constructor>
+        <!--Zero or more repetitions:-->
+        <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+        <!--Zero or more repetitions:-->
+        <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+        <!--Zero or more repetitions:-->
+        <association/>
+        <!--Zero or more repetitions:-->
+        <collection/>
+        <!--Optional:-->
+        <discriminator column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType">
+          <!--1 or more repetitions:-->
+          <case value="anySimpleType" resultMap="anySimpleType" resultType="anySimpleType">
+            <!--Optional:-->
+            <constructor>
+              <!--Zero or more repetitions:-->
+              <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+              <!--Zero or more repetitions:-->
+              <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            </constructor>
+            <!--Zero or more repetitions:-->
+            <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <association/>
+            <!--Zero or more repetitions:-->
+            <collection/>
+            <!--Optional:-->
+            <discriminator/>
+          </case>
+        </discriminator>
+      </collection>
+      <!--Optional:-->
+      <discriminator column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType">
+        <!--1 or more repetitions:-->
+        <case value="anySimpleType" resultMap="anySimpleType" resultType="anySimpleType">
+          <!--Optional:-->
+          <constructor>
+            <!--Zero or more repetitions:-->
+            <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+          </constructor>
+          <!--Zero or more repetitions:-->
+          <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <association/>
+          <!--Zero or more repetitions:-->
+          <collection property="anySimpleType" column="anySimpleType" javaType="anySimpleType" ofType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="true" fetchType="lazy">
+            <!--Optional:-->
+            <constructor>
+              <!--Zero or more repetitions:-->
+              <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+              <!--Zero or more repetitions:-->
+              <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            </constructor>
+            <!--Zero or more repetitions:-->
+            <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <association/>
+            <!--Zero or more repetitions:-->
+            <collection/>
+            <!--Optional:-->
+            <discriminator/>
+          </collection>
+          <!--Optional:-->
+          <discriminator/>
+        </case>
+      </discriminator>
+    </association>
+    <!--Zero or more repetitions:-->
+    <collection property="anySimpleType" column="anySimpleType" javaType="anySimpleType" ofType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="false" fetchType="eager">
+      <!--Optional:-->
+      <constructor>
+        <!--Zero or more repetitions:-->
+        <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+        <!--Zero or more repetitions:-->
+        <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+      </constructor>
+      <!--Zero or more repetitions:-->
+      <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+      <!--Zero or more repetitions:-->
+      <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+      <!--Zero or more repetitions:-->
+      <association property="anySimpleType" column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="false" fetchType="lazy">
+        <!--Optional:-->
+        <constructor>
+          <!--Zero or more repetitions:-->
+          <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+        </constructor>
+        <!--Zero or more repetitions:-->
+        <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+        <!--Zero or more repetitions:-->
+        <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+        <!--Zero or more repetitions:-->
+        <association/>
+        <!--Zero or more repetitions:-->
+        <collection/>
+        <!--Optional:-->
+        <discriminator column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType">
+          <!--1 or more repetitions:-->
+          <case value="anySimpleType" resultMap="anySimpleType" resultType="anySimpleType">
+            <!--Optional:-->
+            <constructor>
+              <!--Zero or more repetitions:-->
+              <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+              <!--Zero or more repetitions:-->
+              <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            </constructor>
+            <!--Zero or more repetitions:-->
+            <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <association/>
+            <!--Zero or more repetitions:-->
+            <collection/>
+            <!--Optional:-->
+            <discriminator/>
+          </case>
+        </discriminator>
+      </association>
+      <!--Zero or more repetitions:-->
+      <collection/>
+      <!--Optional:-->
+      <discriminator column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType">
+        <!--1 or more repetitions:-->
+        <case value="anySimpleType" resultMap="anySimpleType" resultType="anySimpleType">
+          <!--Optional:-->
+          <constructor>
+            <!--Zero or more repetitions:-->
+            <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+          </constructor>
+          <!--Zero or more repetitions:-->
+          <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <association property="anySimpleType" column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="true" fetchType="eager">
+            <!--Optional:-->
+            <constructor>
+              <!--Zero or more repetitions:-->
+              <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+              <!--Zero or more repetitions:-->
+              <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            </constructor>
+            <!--Zero or more repetitions:-->
+            <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <association/>
+            <!--Zero or more repetitions:-->
+            <collection/>
+            <!--Optional:-->
+            <discriminator/>
+          </association>
+          <!--Zero or more repetitions:-->
+          <collection/>
+          <!--Optional:-->
+          <discriminator/>
+        </case>
+      </discriminator>
+    </collection>
+    <!--Optional:-->
+    <discriminator column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType">
+      <!--1 or more repetitions:-->
+      <case value="anySimpleType" resultMap="anySimpleType" resultType="anySimpleType">
+        <!--Optional:-->
+        <constructor>
+          <!--Zero or more repetitions:-->
+          <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+        </constructor>
+        <!--Zero or more repetitions:-->
+        <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+        <!--Zero or more repetitions:-->
+        <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+        <!--Zero or more repetitions:-->
+        <association property="anySimpleType" column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="true" fetchType="eager">
+          <!--Optional:-->
+          <constructor>
+            <!--Zero or more repetitions:-->
+            <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+          </constructor>
+          <!--Zero or more repetitions:-->
+          <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <association/>
+          <!--Zero or more repetitions:-->
+          <collection property="anySimpleType" column="anySimpleType" javaType="anySimpleType" ofType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="false" fetchType="eager">
+            <!--Optional:-->
+            <constructor>
+              <!--Zero or more repetitions:-->
+              <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+              <!--Zero or more repetitions:-->
+              <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            </constructor>
+            <!--Zero or more repetitions:-->
+            <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <association/>
+            <!--Zero or more repetitions:-->
+            <collection/>
+            <!--Optional:-->
+            <discriminator/>
+          </collection>
+          <!--Optional:-->
+          <discriminator/>
+        </association>
+        <!--Zero or more repetitions:-->
+        <collection property="anySimpleType" column="anySimpleType" javaType="anySimpleType" ofType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="false" fetchType="eager">
+          <!--Optional:-->
+          <constructor>
+            <!--Zero or more repetitions:-->
+            <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+          </constructor>
+          <!--Zero or more repetitions:-->
+          <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+          <!--Zero or more repetitions:-->
+          <association property="anySimpleType" column="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" select="anySimpleType" resultMap="anySimpleType" typeHandler="anySimpleType" notNullColumn="anySimpleType" columnPrefix="anySimpleType" resultSet="anySimpleType" foreignColumn="anySimpleType" autoMapping="true" fetchType="lazy">
+            <!--Optional:-->
+            <constructor>
+              <!--Zero or more repetitions:-->
+              <idArg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+              <!--Zero or more repetitions:-->
+              <arg javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType" select="anySimpleType" resultMap="anySimpleType"/>
+            </constructor>
+            <!--Zero or more repetitions:-->
+            <id property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <result property="anySimpleType" javaType="anySimpleType" column="anySimpleType" jdbcType="anySimpleType" typeHandler="anySimpleType"/>
+            <!--Zero or more repetitions:-->
+            <association/>
+            <!--Zero or more repetitions:-->
+            <collection/>
+            <!--Optional:-->
+            <discriminator/>
+          </association>
+          <!--Zero or more repetitions:-->
+          <collection/>
+          <!--Optional:-->
+          <discriminator/>
+        </collection>
+        <!--Optional:-->
+        <discriminator/>
+      </case>
+    </discriminator>
+  </resultMap>
+  <!--Zero or more repetitions:-->
+  <parameterMap id="anySimpleType" type="anySimpleType">
+    <!--Zero or more repetitions:-->
+    <parameter property="anySimpleType" javaType="anySimpleType" jdbcType="anySimpleType" mode="INOUT" resultMap="anySimpleType" scale="anySimpleType" typeHandler="anySimpleType"/>
+  </parameterMap>
+  <!--Zero or more repetitions:-->
+  <sql id="anySimpleType" lang="anySimpleType" databaseId="anySimpleType">
+    flammato
+    <!--You have a CHOICE of the next 8 items at this level-->
+    <include refid="anySimpleType">
+      <!--Zero or more repetitions:-->
+      <property name="anySimpleType" value="anySimpleType"/>
+    </include>
+    <trim prefix="anySimpleType" prefixOverrides="anySimpleType" suffix="anySimpleType" suffixOverrides="anySimpleType">
+      speluncis
+      <!--You have a CHOICE of the next 8 items at this level-->
+      <include refid="anySimpleType">
+        <!--Zero or more repetitions:-->
+        <property name="anySimpleType" value="anySimpleType"/>
+      </include>
+      <trim/>
+      <where>
+        profundum
+        <!--You have a CHOICE of the next 8 items at this level-->
+        <include refid="anySimpleType">
+          <!--Zero or more repetitions:-->
+          <property name="anySimpleType" value="anySimpleType"/>
+        </include>
+        <trim/>
+        <where/>
+        <set>
+          bella
+          <!--You have a CHOICE of the next 8 items at this level-->
+          <include refid="anySimpleType">
+            <!--Zero or more repetitions:-->
+            <property name="anySimpleType" value="anySimpleType"/>
+          </include>
+          <trim/>
+          <where/>
+          <set/>
+          <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+            nubibus
+            <!--You have a CHOICE of the next 8 items at this level-->
+            <include refid="anySimpleType">
+              <!--Zero or more repetitions:-->
+              <property name="anySimpleType" value="anySimpleType"/>
+            </include>
+            <trim/>
+            <where/>
+            <set/>
+            <foreach/>
+            <choose>
+              <!--Zero or more repetitions:-->
+              <when test="anySimpleType">
+                flammas
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  ac
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  hoc
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                rapidum
+              </when>
+              <!--Optional:-->
+              <otherwise>
+                ac
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  caelumque
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  speluncis
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                circum
+              </otherwise>
+            </choose>
+            <if test="anySimpleType">
+              aris
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach/>
+              <choose>
+                <!--Zero or more repetitions:-->
+                <when test="anySimpleType">
+                  coniunx
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  praeterea
+                </when>
+                <!--Optional:-->
+                <otherwise>
+                  arce
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  claustra
+                </otherwise>
+              </choose>
+              <if/>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              circum
+            </if>
+            <bind name="anySimpleType" value="anySimpleType"/>
+            imperio
+          </foreach>
+          <choose>
+            <!--Zero or more repetitions:-->
+            <when test="anySimpleType">
+              certo
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                quisquam
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  et
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  ac
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                feta
+              </foreach>
+              <choose/>
+              <if test="anySimpleType">
+                ac
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                  sed
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  pectore
+                </foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                talia
+              </if>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              pectore
+            </when>
+            <!--Optional:-->
+            <otherwise>
+              austris
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                annos
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  sciret
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  certo
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                dare
+              </foreach>
+              <choose/>
+              <if test="anySimpleType">
+                rates
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                  bella
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  volutans
+                </foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                dedit
+              </if>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              faciat
+            </otherwise>
+          </choose>
+          <if test="anySimpleType">
+            magno
+            <!--You have a CHOICE of the next 8 items at this level-->
+            <include refid="anySimpleType">
+              <!--Zero or more repetitions:-->
+              <property name="anySimpleType" value="anySimpleType"/>
+            </include>
+            <trim/>
+            <where/>
+            <set/>
+            <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+              et
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach/>
+              <choose>
+                <!--Zero or more repetitions:-->
+                <when test="anySimpleType">
+                  ac
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  et
+                </when>
+                <!--Optional:-->
+                <otherwise>
+                  regemque
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  annos
+                </otherwise>
+              </choose>
+              <if/>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              infixit
+            </foreach>
+            <choose>
+              <!--Zero or more repetitions:-->
+              <when test="anySimpleType">
+                ventos
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                  tenens
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  regina
+                </foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                montis
+              </when>
+              <!--Optional:-->
+              <otherwise>
+                rapidum
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                  habenas
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  insuper
+                </foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                mollitque
+              </otherwise>
+            </choose>
+            <if/>
+            <bind name="anySimpleType" value="anySimpleType"/>
+            cum
+          </if>
+          <bind name="anySimpleType" value="anySimpleType"/>
+          iovisque
+        </set>
+        <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+          in
+          <!--You have a CHOICE of the next 8 items at this level-->
+          <include refid="anySimpleType">
+            <!--Zero or more repetitions:-->
+            <property name="anySimpleType" value="anySimpleType"/>
+          </include>
+          <trim/>
+          <where/>
+          <set>
+            soror
+            <!--You have a CHOICE of the next 8 items at this level-->
+            <include refid="anySimpleType">
+              <!--Zero or more repetitions:-->
+              <property name="anySimpleType" value="anySimpleType"/>
+            </include>
+            <trim/>
+            <where/>
+            <set/>
+            <foreach/>
+            <choose>
+              <!--Zero or more repetitions:-->
+              <when test="anySimpleType">
+                abdidit
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  iunonis
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  coniunx
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                adorat
+              </when>
+              <!--Optional:-->
+              <otherwise>
+                ipsa
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  illum
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  frenat
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                aris
+              </otherwise>
+            </choose>
+            <if test="anySimpleType">
+              nimborum
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach/>
+              <choose>
+                <!--Zero or more repetitions:-->
+                <when test="anySimpleType">
+                  aris
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  mollitque
+                </when>
+                <!--Optional:-->
+                <otherwise>
+                  premere
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  montis
+                </otherwise>
+              </choose>
+              <if/>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              insuper
+            </if>
+            <bind name="anySimpleType" value="anySimpleType"/>
+            molemque
+          </set>
+          <foreach/>
+          <choose>
+            <!--Zero or more repetitions:-->
+            <when test="anySimpleType">
+              ferant
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set>
+                gero
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  nimborum
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  circum
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                vasto
+              </set>
+              <foreach/>
+              <choose/>
+              <if test="anySimpleType">
+                montis
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set>
+                  flammato
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  aris
+                </set>
+                <foreach/>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                tempestatesque
+              </if>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              aris
+            </when>
+            <!--Optional:-->
+            <otherwise>
+              tenens
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set>
+                incedo
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  premit
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  ac
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                iras
+              </set>
+              <foreach/>
+              <choose/>
+              <if test="anySimpleType">
+                acuto
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set>
+                  nubibus
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  et
+                </set>
+                <foreach/>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                austris
+              </if>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              dedit
+            </otherwise>
+          </choose>
+          <if test="anySimpleType">
+            qui
+            <!--You have a CHOICE of the next 8 items at this level-->
+            <include refid="anySimpleType">
+              <!--Zero or more repetitions:-->
+              <property name="anySimpleType" value="anySimpleType"/>
+            </include>
+            <trim/>
+            <where/>
+            <set>
+              profundum
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach/>
+              <choose>
+                <!--Zero or more repetitions:-->
+                <when test="anySimpleType">
+                  atris
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  imposuit
+                </when>
+                <!--Optional:-->
+                <otherwise>
+                  atris
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  magno
+                </otherwise>
+              </choose>
+              <if/>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              animos
+            </set>
+            <foreach/>
+            <choose>
+              <!--Zero or more repetitions:-->
+              <when test="anySimpleType">
+                iras
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set>
+                  sonoras
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  verrantque
+                </set>
+                <foreach/>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                patriam
+              </when>
+              <!--Optional:-->
+              <otherwise>
+                metuens
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set>
+                  montis
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  dare
+                </set>
+                <foreach/>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                laxas
+              </otherwise>
+            </choose>
+            <if/>
+            <bind name="anySimpleType" value="anySimpleType"/>
+            tempestatesque
+          </if>
+          <bind name="anySimpleType" value="anySimpleType"/>
+          e
+        </foreach>
+        <choose>
+          <!--Zero or more repetitions:-->
+          <when test="anySimpleType">
+            sceptra
+            <!--You have a CHOICE of the next 8 items at this level-->
+            <include refid="anySimpleType">
+              <!--Zero or more repetitions:-->
+              <property name="anySimpleType" value="anySimpleType"/>
+            </include>
+            <trim/>
+            <where/>
+            <set>
+              volutans
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                vasto
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  murmure
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  coniunx
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                vinclis
+              </foreach>
+              <choose/>
+              <if test="anySimpleType">
+                rapidum
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                  rapidi
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  turbine
+                </foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                antro
+              </if>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              auras
+            </set>
+            <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+              sciret
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set>
+                aequora
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  luctantis
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  aequora
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                ipsa
+              </set>
+              <foreach/>
+              <choose/>
+              <if test="anySimpleType">
+                et
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set>
+                  aris
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  incedo
+                </set>
+                <foreach/>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                imperio
+              </if>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              hic
+            </foreach>
+            <choose/>
+            <if test="anySimpleType">
+              arce
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set>
+                ego
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                  ni
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  tempestatesque
+                </foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                circum
+              </set>
+              <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                ego
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set>
+                  corde
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  aris
+                </set>
+                <foreach/>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                insuper
+              </foreach>
+              <choose/>
+              <if/>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              molemque
+            </if>
+            <bind name="anySimpleType" value="anySimpleType"/>
+            temperat
+          </when>
+          <!--Optional:-->
+          <otherwise>
+            rapidum
+            <!--You have a CHOICE of the next 8 items at this level-->
+            <include refid="anySimpleType">
+              <!--Zero or more repetitions:-->
+              <property name="anySimpleType" value="anySimpleType"/>
+            </include>
+            <trim/>
+            <where/>
+            <set>
+              magno
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                nimborum
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  gero
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  altos
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                iunonis
+              </foreach>
+              <choose/>
+              <if test="anySimpleType">
+                aeoliam
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                  premere
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  hic
+                </foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                iovisque
+              </if>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              et
+            </set>
+            <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+              nubibus
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set>
+                carcere
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach/>
+                <choose/>
+                <if test="anySimpleType">
+                  imposuit
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  murmure
+                </if>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                rates
+              </set>
+              <foreach/>
+              <choose/>
+              <if test="anySimpleType">
+                maria
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set>
+                  supplex
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  imponet
+                </set>
+                <foreach/>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                ipsa
+              </if>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              numen
+            </foreach>
+            <choose/>
+            <if test="anySimpleType">
+              volutans
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set>
+                per
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                  maria
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  et
+                </foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                foedere
+              </set>
+              <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+                tempestatesque
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set>
+                  sciret
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  ego
+                </set>
+                <foreach/>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                rapidi
+              </foreach>
+              <choose/>
+              <if/>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              iaculata
+            </if>
+            <bind name="anySimpleType" value="anySimpleType"/>
+            montis
+          </otherwise>
+        </choose>
+        <if test="anySimpleType">
+          omnipotens
+          <!--You have a CHOICE of the next 8 items at this level-->
+          <include refid="anySimpleType">
+            <!--Zero or more repetitions:-->
+            <property name="anySimpleType" value="anySimpleType"/>
+          </include>
+          <trim/>
+          <where/>
+          <set>
+            et
+            <!--You have a CHOICE of the next 8 items at this level-->
+            <include refid="anySimpleType">
+              <!--Zero or more repetitions:-->
+              <property name="anySimpleType" value="anySimpleType"/>
+            </include>
+            <trim/>
+            <where/>
+            <set/>
+            <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">
+              premere
+              <!--You have a CHOICE of the next 8 items at this level-->
+              <include refid="anySimpleType">
+                <!--Zero or more repetitions:-->
+                <property name="anySimpleType" value="anySimpleType"/>
+              </include>
+              <trim/>
+              <where/>
+              <set/>
+              <foreach/>
+              <choose>
+                <!--Zero or more repetitions:-->
+                <when test="anySimpleType">
+                  premit
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  talia
+                </when>
+                <!--Optional:-->
+                <otherwise>
+                  numen
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <include refid="anySimpleType">
+                    <!--Zero or more repetitions:-->
+                    <property name="anySimpleType" value="anySimpleType"/>
+                  </include>
+                  <trim/>
+                  <where/>
+                  <set/>
+                  <foreach/>
+                  <choose/>
+                  <if/>
+                  <bind name="anySimpleType" value="anySimpleType"/>
+                  terras
+                </otherwise>
+              </choose>
+              <if/>
+              <bind name="anySimpleType" value="anySimpleType"/>
+              vasto
+            </foreach>
+            <choose>
+              <!--Zero or more repetitions:-->
+              <when test="anySimpleType">
+                et
+                <!--You have a CHOICE of the next 8 items at this level-->
+                <include refid="anySimpleType">
+                  <!--Zero or more repetitions:-->
+                  <property name="anySimpleType" value="anySimpleType"/>
+                </include>
+                <trim/>
+                <where/>
+                <set/>
+                <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">profundum dare</foreach>
+                <choose/>
+                <if/>
+                <bind name="anySimpleType" value="anySimpleType"/>
+                premit
+              </when>
+              <!--Optional:-->
+            </choose>
+            <if/>
+            <bind name="anySimpleType" value="anySimpleType"/>
+            vasto
+          </set>
+          <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">illi arce</foreach>
+          <choose>
+            <!--Zero or more repetitions:-->
+            <!--Optional:-->
+          </choose>
+          <if/>
+          <bind name="anySimpleType" value="anySimpleType"/>
+          dea
+        </if>
+        <bind name="anySimpleType" value="anySimpleType"/>
+        luctantis
+      </where>
+      <set>rapidum bella</set>
+      <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">tempestatesque ac</foreach>
+      <choose>
+        <!--Zero or more repetitions:-->
+        <!--Optional:-->
+      </choose>
+      <if test="anySimpleType">rapidi imposuit</if>
+      <bind name="anySimpleType" value="anySimpleType"/>
+      e
+    </trim>
+    <where>ignem tenens</where>
+    <set>et vinclis</set>
+    <foreach collection="anySimpleType" item="anySimpleType" index="anySimpleType" open="anySimpleType" close="anySimpleType" separator="anySimpleType">murmure aeolus</foreach>
+    <choose>
+      <!--Zero or more repetitions:-->
+      <!--Optional:-->
+    </choose>
+    <if test="anySimpleType">premere sonoras</if>
+    <bind name="anySimpleType" value="anySimpleType"/>
+    rapidi
+  </sql>
+  <!--Zero or more repetitions:-->
+  <!--Zero or more repetitions:-->
+  <!--Zero or more repetitions:-->
+  <!--Zero or more repetitions:-->
+</mapper>

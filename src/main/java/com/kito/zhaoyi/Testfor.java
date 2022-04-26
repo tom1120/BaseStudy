@@ -2,7 +2,6 @@ package com.kito.zhaoyi;
 
 import java.math.BigInteger;
 
-import org.junit.Test;
 
 /**
  * 2015年12月20日
@@ -158,7 +157,7 @@ public class Testfor {
 	/**
 	 * 获取1到1000内被5整除的数，按3个每行打印
 	 */
-	@Test
+
 	public void getThousandOfDividedByFive(){
 		
 		for (int i = 1; i <=1000; i++) {

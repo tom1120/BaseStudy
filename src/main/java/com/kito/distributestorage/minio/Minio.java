@@ -12,9 +12,10 @@ import java.io.InputStream;
  */
 public class Minio {
     /**
-     * minio参数
+     * minio参数 use outer net address put method can not connect
      */
-    private static final String ENDPOINT = "http://192.168.99.14:9100";
+//    private static final String ENDPOINT = "http://oss.qlongit.cn";
+    private static final String ENDPOINT = "http://192.168.99.14:9002";
     private static final String ACCESS_KEY = "test123456";
     private static final String SECRET_KEY = "test123456789";
 
@@ -167,7 +168,8 @@ public class Minio {
 
 
     public static void main(String[] args) {
-        String bucket = "test";
+        String bucket = "qlong-qwechat";
+//        String objectKey = "demo/123.png";
         String objectKey = "demo/123.png";
         try {
             // 创建桶
@@ -175,8 +177,11 @@ public class Minio {
             // 设置桶读写权限
             setBucketPolicy(bucket, "read-write");
             // 上传本地文件
-            String url1 = uploadFile(bucket, objectKey, "C:\\Users\\Administrator\\Desktop\\kito饭堂充值二维码.png");
-            // 输出  http://127.0.0.1:9000/public/demo/123.png
+//            String url1 = uploadFile(bucket, objectKey, "C:\\Users\\Administrator\\Desktop\\kito饭堂充值二维码.png");
+
+            String url2 = uploadInputStream(bucket, objectKey, new FileInputStream(new File("C:\\Users\\Administrator\\Desktop\\kito饭堂充值二维码.png")));
+
+/*            // 输出  http://127.0.0.1:9000/public/demo/123.png
             System.out.println(url1);
             // 上传文件流
             String url2 = uploadInputStream(bucket, objectKey, new FileInputStream(new File("C:\\Users\\Administrator\\Desktop\\kito饭堂充值二维码.png")));
@@ -193,7 +198,7 @@ public class Minio {
             // 获取文件签名url
             String sign = getSignedUrl(bucket, objectKey, 300);
             // 该路径可访问文件五分钟
-            System.out.println(sign);
+            System.out.println(sign);*/
         } catch (Exception e) {
             e.printStackTrace();
         }

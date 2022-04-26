@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--内部声明-->
+<!--<!DOCTYPE configuration [-->
+<!--        ]>-->
+
+<!--私有声明-->
+<!--<!DOCTYPE configuration SYSTEM "mybatis-3-config.dtd">-->
+
+<!--公共声明-->
+<!DOCTYPE configuration PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!--Optional:-->
+    <settings>
+        <!--1 or more repetitions:-->
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <!--Optional:-->
+    <typeAliases>
+        <!--Zero or more repetitions:-->
+        <package name="com.kito.orm"/>
+    </typeAliases>
+
+    <environments default="development">
+        <!--1 or more repetitions:-->
+        <environment id="development">
+            <transactionManager type="JDBC">
+                <!--Zero or more repetitions:-->
+                <property name="" value=""/>
+            </transactionManager>
+            <dataSource type="UNPOOLED">
+                <!--Zero or more repetitions:-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3308/mybatis?serverTimezone=GMT%2B8"/>
+                <property name="username" value="qlong"/>
+                <property name="password" value="QlongDataBase1314"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--Optional:-->
+    <mappers>
+        <!--Zero or more repetitions:-->
+        <mapper resource="com/kito/orm/mapper/CountryMapper.xml"/>
+    </mappers>
+</configuration>

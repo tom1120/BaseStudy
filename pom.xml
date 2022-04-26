@@ -96,6 +96,42 @@ fi
                 <url>https://repo1.maven.org/maven2/</url>
             </repository>
 
+
+        <repository>
+            <id>wso2-nexus</id>
+            <name>WSO2 internal Repository</name>
+            <url>http://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+
+        <repository>
+            <id>wso2.releases</id>
+            <name>WSO2 internal Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+
+        <repository>
+            <id>wso2.snapshots</id>
+            <name>Apache Snapshot Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+
     </repositories>
 
     <dependencies>
@@ -140,6 +176,12 @@ fi
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
             <version>3.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-codec</groupId>
+                    <artifactId>commons-codec</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
 
@@ -198,6 +240,14 @@ fi
 
 
         <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+
+<!--测试-->
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${org.springframework.version}</version>
@@ -208,6 +258,57 @@ fi
             <artifactId>minio</artifactId>
             <version>8.2.1</version>
         </dependency>
+<!--orm-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.22</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>ru.yandex.clickhouse</groupId>
+            <artifactId>clickhouse-jdbc</artifactId>
+            <version>0.3.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.authenticator.stub</artifactId>
+            <version>4.4.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2.wso2</groupId>
+            <artifactId>axis2</artifactId>
+            <version>1.6.1.wso2v20</version>
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${user.dir}/lib/axis2-1.6.1.wso2v4.jar</systemPath>-->
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.deployment</groupId>
+            <artifactId>org.wso2.carbon.service.mgt</artifactId>
+            <version>4.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1.0.wso2v3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.user.ws</groupId>
+            <artifactId>org.wso2.carbon.um.ws.api.stub</artifactId>
+            <version>5.1.4</version>
+        </dependency>
+
+
+
 
 
     </dependencies>
