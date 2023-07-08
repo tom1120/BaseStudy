@@ -1,6 +1,9 @@
-package nettystudy.nettysample;/**
+/*
+package nettystudy.nettysample;*/
+/**
  * Created by hasee on 2018/5/27.
- */
+ *//*
+
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -9,10 +12,12 @@ import io.netty.channel.ChannelHandlerContext;
 
 import java.util.Date;
 
+*/
 /**
  * @author zhaoyi
  * @createTime 2018-05-2018/5/27-23:14
- */
+ *//*
+
 public class TimeServerHandler extends ChannelHandlerAdapter {
 
     @Override
@@ -39,3 +44,4 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
         ctx.close();
     }
 }
+*/

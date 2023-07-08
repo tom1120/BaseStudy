@@ -1,6 +1,9 @@
-package nettystudy.nettysample;/**
+/*
+package nettystudy.nettysample;*/
+/**
  * Created by hasee on 2018/5/27.
- */
+ *//*
+
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -8,10 +11,12 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+*/
 /**
  * @author zhaoyi
  * @createTime 2018-05-2018/5/27-22:46
- */
+ *//*
+
 public class TimeServer {
 
     public void bind(int port){
@@ -58,3 +63,4 @@ public class TimeServer {
 
 
 }
+*/

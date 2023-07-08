@@ -1,6 +1,9 @@
-package nettystudy.nettysample;/**
+/*
+package nettystudy.nettysample;*/
+/**
  * Created by hasee on 2018/6/13.
- */
+ *//*
+
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -8,10 +11,12 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
+*/
 /**
  * @author zhaoyi
  * @createTime 2018-06-2018/6/13-15:07
- */
+ *//*
+
 public class TimeClient {
     public void connect(final int port, final String host) throws Exception {
         //配置客户端NIO线程组
@@ -57,3 +62,4 @@ public class TimeClient {
     }
 
 }
+*/
