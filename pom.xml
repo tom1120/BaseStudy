@@ -15,54 +15,55 @@
         <sonar.host.url>http://192.168.99.14:9200</sonar.host.url>
         <sonar.projectKey>mydemo</sonar.projectKey>
 
+        <log4j.version>2.16.0</log4j.version>
     </properties>
 
     <build>
         <plugins>
 
             <!--代码质量检查，提交前pre-commit-->
-<!--            <plugin>
-                <groupId>io.github.phillipuniverse</groupId>
-                <artifactId>githook-maven-plugin</artifactId>
-                <version>1.0.5</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>install</goal>
-                        </goals>
-                        <configuration>
-                            <hooks>
-                                &lt;!&ndash;调用shell执行mvn命令，命令修改要生效，需要先执行mvn install，默认生成的hook文件执行路径&ndash;&gt;
-                                <pre-commit>
-                                    <![CDATA[
-#!/bin/bash
-set -x
-exec &> log.txt
-echo running validation build
-mvn sonar:sonar
-sleep 5
-curl_cmd=`curl -i -X POST -d "login=admin" -d "password=42899975" http://192.168.99.14:9200/api/authentication/login`
-c=`echo $curl_cmd |grep 'Set-Cookie:' | awk -F ":" '{print $8}'`
-cmd=`curl -b "$c" http://192.168.99.14:9200/api/qualitygates/project_status?projectKey=mydemo`
-d=`echo $cmd | awk -F ":" '{print $3}' | awk -F "," '{print $1}'`
-echo "=============="$d
-if [ $d=="\"ERROR\"" ]; then
-    exit 1
-elif [ $d=="\"OK\"" ]; then
-    exit 0
-fi
-                                    ]]>
-                                </pre-commit>
-                            </hooks>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>-->
-<!--            代码检查 mvn sonar:sonar-->
+            <!--            <plugin>
+                            <groupId>io.github.phillipuniverse</groupId>
+                            <artifactId>githook-maven-plugin</artifactId>
+                            <version>1.0.5</version>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>install</goal>
+                                    </goals>
+                                    <configuration>
+                                        <hooks>
+                                            &lt;!&ndash;调用shell执行mvn命令，命令修改要生效，需要先执行mvn install，默认生成的hook文件执行路径&ndash;&gt;
+                                            <pre-commit>
+                                                <![CDATA[
+            #!/bin/bash
+            set -x
+            exec &> log.txt
+            echo running validation build
+            mvn sonar:sonar
+            sleep 5
+            curl_cmd=`curl -i -X POST -d "login=admin" -d "password=42899975" http://192.168.99.14:9200/api/authentication/login`
+            c=`echo $curl_cmd |grep 'Set-Cookie:' | awk -F ":" '{print $8}'`
+            cmd=`curl -b "$c" http://192.168.99.14:9200/api/qualitygates/project_status?projectKey=mydemo`
+            d=`echo $cmd | awk -F ":" '{print $3}' | awk -F "," '{print $1}'`
+            echo "=============="$d
+            if [ $d=="\"ERROR\"" ]; then
+                exit 1
+            elif [ $d=="\"OK\"" ]; then
+                exit 0
+            fi
+                                                ]]>
+                                            </pre-commit>
+                                        </hooks>
+                                    </configuration>
+                                </execution>
+                            </executions>
+                        </plugin>-->
+            <!--            代码检查 mvn sonar:sonar-->
             <plugin>
-                    <groupId>org.sonarsource.scanner.maven</groupId>
-                    <artifactId>sonar-maven-plugin</artifactId>
-                    <version>3.9.0.2155</version>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.0.2155</version>
             </plugin>
 
             <plugin>
@@ -81,20 +82,77 @@ fi
                 </configuration>
             </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4.1</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>extra-enforcer-rules</artifactId>
+                        <version>1.0-beta-9</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>enforce-dependencies</id>
+                        <goals>
+                            <goal>display-info</goal>
+                            <goal>enforce</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <rules>
+                        <banDuplicateClasses>
+                            <findAllDuplicates>true</findAllDuplicates>
+                        </banDuplicateClasses>
+                    </rules>
+                </configuration>
+            </plugin>
+
+
+            <plugin>
+                <groupId>org.scala-tools</groupId>
+                <artifactId>maven-scala-plugin</artifactId>
+                <version>2.15.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <scalaVersion>2.11.12</scalaVersion>
+                    <args>
+                        <arg>-target:jvm-1.8</arg>
+                    </args>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
     <repositories>
-            <!--阿里云中央仓库地址-->
-            <repository>
-                <id>aliyun</id>
-                <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-            </repository>
+        <repository>
+            <id>AsposeJavaAPI</id>
+            <name>Aspose PSD for Java</name>
+            <url>https://releases.aspose.com/java/repo/</url>
+<!--                        <url>https://artifact.aspose.com/repo/</url>-->
+        </repository>
 
-            <repository>
-                <id>central</id>
-                <url>https://repo1.maven.org/maven2/</url>
-            </repository>
+        <!--阿里云中央仓库地址-->
+        <repository>
+            <id>aliyun</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
 
 
         <repository>
@@ -148,11 +206,11 @@ fi
             <version>3.21.0-GA</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>5.0.0.Alpha2</version>
-        </dependency>
+        <!--        <dependency>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-all</artifactId>
+                    <version>5.0.0.Alpha2</version>
+                </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
@@ -212,13 +270,11 @@ fi
             <artifactId>slf4j-api</artifactId>
             <version>2.0.0-alpha1</version>
         </dependency>
-
-
         <!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->
         <!--<dependency>-->
-            <!--<groupId>org.slf4j</groupId>-->
-            <!--<artifactId>log4j-over-slf4j</artifactId>-->
-            <!--<version>2.0.0-alpha1</version>-->
+        <!--<groupId>org.slf4j</groupId>-->
+        <!--<artifactId>log4j-over-slf4j</artifactId>-->
+        <!--<version>2.0.0-alpha1</version>-->
         <!--</dependency>-->
 
 
@@ -229,6 +285,42 @@ fi
             <version>2.0.0-alpha1</version>
             <!--<scope>test</scope>-->
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+
+        <!--        <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-api</artifactId>
+                    <version>${log4j.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-core</artifactId>
+                    <version>${log4j.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-web</artifactId>
+                    <version>${log4j.version}</version>
+                </dependency>-->
+        <!-- 桥接：告诉Slf4j使用Log4j2 -->
+        <!--        <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j-impl</artifactId>
+                    <version>${log4j.version}</version>
+                </dependency>-->
+        <!-- 桥接：告诉commons logging使用Log4j2 -->
+        <!--        <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-jcl</artifactId>
+                    <version>${log4j.version}</version>
+                </dependency>-->
 
 
         <!--简化一些写法 set get constructor slf4j-->
@@ -239,14 +331,7 @@ fi
         </dependency>
 
 
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
-
-
-<!--测试-->
+        <!--测试-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
@@ -258,7 +343,7 @@ fi
             <artifactId>minio</artifactId>
             <version>8.2.1</version>
         </dependency>
-<!--orm-->
+        <!--orm-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -279,40 +364,135 @@ fi
         </dependency>
 
 
+        <!--大数据-->
         <dependency>
-            <groupId>org.wso2.carbon</groupId>
-            <artifactId>org.wso2.carbon.authenticator.stub</artifactId>
-            <version>4.4.11</version>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>3.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>netty</artifactId>
+                    <groupId>io.netty</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.apache.axis2.wso2</groupId>
-            <artifactId>axis2</artifactId>
-            <version>1.6.1.wso2v20</version>
-            <!--<scope>system</scope>-->
-            <!--<systemPath>${user.dir}/lib/axis2-1.6.1.wso2v4.jar</systemPath>-->
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>3.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>netty</artifactId>
+                    <groupId>io.netty</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.deployment</groupId>
-            <artifactId>org.wso2.carbon.service.mgt</artifactId>
-            <version>4.7.0</version>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs-client</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-jdbc</artifactId>
+            <version>2.1.1</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>junit</artifactId>
+                    <groupId>junit</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.wso2.orbit.commons-httpclient</groupId>
-            <artifactId>commons-httpclient</artifactId>
-            <version>3.1.0.wso2v3</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.5.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>2.4.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.identity.user.ws</groupId>
-            <artifactId>org.wso2.carbon.um.ws.api.stub</artifactId>
-            <version>5.1.4</version>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-yarn_2.11</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-yarn-client</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-core</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <!-- scala -->
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.12</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.im4java</groupId>
+            <artifactId>im4java</artifactId>
+            <version>1.4.0</version>
         </dependency>
 
 
+        <dependency>
+            <groupId>com.aspose</groupId>
+            <artifactId>aspose-psd</artifactId>
+            <version>21.7</version>
+            <classifier>jdk16</classifier>
+        </dependency>
 
 
 
     </dependencies>
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>4.1.18.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.6.7</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.6.7</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>
