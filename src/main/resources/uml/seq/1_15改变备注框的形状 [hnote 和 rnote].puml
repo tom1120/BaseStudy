@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+caller -> server:conReq
+hnote over caller: 空闲
+caller <- server: conConf
+rnote over server
+    "r"是正方形
+    "h"是六边形
+endrnote
+rnote over server
+    多
+    行
+    文本
+endrnote
+hnote over caller
+    多
+    行
+    文本
+endrnote
+
+@enduml

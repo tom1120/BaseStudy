@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+class Dummy{
+    -field
+    #field
+    ~method1()
+    +method2()
+}
+
+
+@enduml

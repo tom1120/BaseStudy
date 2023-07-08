@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Bob->Alice:hello
+activate Alice
+Alice->Alice:some action
+return bye
+@enduml

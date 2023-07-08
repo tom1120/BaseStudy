@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+hide unlinked
+participant Alice
+participant Bob
+participant Carol
+
+Alice->Bob:hello
+
+@enduml

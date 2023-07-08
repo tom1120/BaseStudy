@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Foo1{
+    You can use
+    several lines
+    ..
+    as you want
+    ==
+    things together.
+    --
+    You can have as many groups
+    as you want
+    --
+    End of class
+}
+
+newPage
+class User{
+    .. Simple Getter ..
+    + getName()
+    +getAddress()
+    .. Some setter ..
+    +setName()
+    __ private data __
+    int age
+    -- encrypted --
+    String password
+}
+
+
+@enduml

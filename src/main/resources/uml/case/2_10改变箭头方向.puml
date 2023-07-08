@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:user:-->(Use case 1)
+:user:->(Use case 2)
+
+(Use case 3) <.. :user1:
+(Use case 4) <- :user1:
+
+:user5: -left->(dummyLeft)
+:user5: -right->(dummyRight)
+:user5: -up->(dummyUp)
+:user5: -down->(dummyDown)
+
+@enduml

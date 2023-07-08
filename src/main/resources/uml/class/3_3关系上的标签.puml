@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Class01 "1" *-- "many" Class02 : contains
+Class o-- Class04: aggregation
+Class05 --> "1" Class06
+
+newPage
+class Car
+Driver - Car :drivers >
+Car *-Wheel:have 4 >
+Car -- Person : < owns
+
+@enduml

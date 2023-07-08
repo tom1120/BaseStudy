@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam lifelineStrategy solid
+skinparam style strictuml
+Alice -> Bob: hello
+Bob -> Alice: ok
+
+@enduml

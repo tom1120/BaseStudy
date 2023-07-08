@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+'default
+'top to bottom direction
+left to right direction
+:actor1:--> (Usecase1)
+newpage
+:actor2:-->(Usecase2)
+
+@enduml

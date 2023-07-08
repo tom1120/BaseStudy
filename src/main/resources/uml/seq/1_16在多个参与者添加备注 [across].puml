@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Alice->Bob:m1
+Bob->Charlie:m2
+note over Alice,Charlie:创建跨域所有参与者的备注的旧方法：\n ""note over //FirstPart,LastPart//""
+note across: 新方法：\n""note across""
+Bob->Alice
+hnote across: 跨域所有参与者的备注
+@enduml

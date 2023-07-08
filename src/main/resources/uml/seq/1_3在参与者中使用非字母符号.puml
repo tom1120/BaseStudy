@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Alice->"Bob()":Hello
+"Bob()"->Long as "This is very\nlong"
+Long --> "Bob()":ok
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+skinparam maxMessageSize 50
+participant a
+participant b
+a->b:这\n一条\n是\n手工换行
+a->b:this is very long message on several words
+@enduml

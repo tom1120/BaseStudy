@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+alice->bob ++:hello1
+bob->charline --++:hello2
+charline-->alice --:ok
+newpage
+
+alice->bob --++ #gold:hello
+bob ->alice --++ #gold:you too
+alice->bob --:step1
+alice->bob : step2
+
+
+@enduml

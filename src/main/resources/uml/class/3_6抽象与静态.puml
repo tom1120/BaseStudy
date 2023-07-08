@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Dummy{
+    {static} String id
+    {abstract} void methods()
+}
+
+@enduml

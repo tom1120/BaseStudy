@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Alice -> Bob: hello
+note left: this is a first note
+
+Bob->Alice: ok
+note right: this is another one
+
+Bob->Bob: I am thinking
+note left
+a note
+can alse be defined
+on sereval lines
+end note
+@enduml

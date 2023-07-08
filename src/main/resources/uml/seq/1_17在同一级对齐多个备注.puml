@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+note over Alice: Alice的初始状态
+/note over Bob : Bob的初始状态
+Bob --> Alice: Authentication Response
+
+@enduml

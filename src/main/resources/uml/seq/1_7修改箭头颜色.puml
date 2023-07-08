@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Bob -[#red]> Alice: hello
+Alice -[#0000FF]->Bob:ok
+@enduml

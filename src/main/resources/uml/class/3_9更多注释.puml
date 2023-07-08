@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Foo
+note left: On last defined class
+
+note top of Object
+    In java,<size:18>every</size> <u>class</u>
+    <b>extends</b>
+    <i>this</i> one.
+end note
+
+note as N1
+    This note is <u>also</u>
+    <b><color:royalBlus>on several</color>
+    <s>words</s> lines
+    And this is hosted by <img:sourceforge.jpg>
+end note
+
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+(First usecase)
+(Another usecase) as (UC2)
+usecase UC3
+usecase (Laset\nusecase) as UC4
+@enduml

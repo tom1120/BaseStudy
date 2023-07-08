@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+skinparam responseMessageBelowArrow true
+Bob->Alice:hello
+Alice->Bob:ok
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+skinparam actorStyle Hollow
+:User: --> (Use)
+"Main Admin" as Admin
+"Use the application" as (Use)
+Admin --> (Admin the application)
+@enduml
